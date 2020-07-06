@@ -17,6 +17,7 @@ public class ProducerDemoWithKeys {
         Logger logger = LoggerFactory.getLogger(ProducerDemoWithKeys.class);
 
         String boostrapServers = "localhost:9092";
+        String topic = "test-topic";
 
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, boostrapServers);
@@ -27,7 +28,6 @@ public class ProducerDemoWithKeys {
 
         for (int i = 0; i < 10; i++) {
 
-            String topic = "test-topic";
             String value = "testing kafka producer with keys " + i;
             String key = "id_" + i;
 

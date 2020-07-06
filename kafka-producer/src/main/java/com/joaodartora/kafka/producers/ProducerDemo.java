@@ -12,6 +12,7 @@ public class ProducerDemo {
     public static void main(String[] args) {
 
         String boostrapServers = "localhost:9092";
+        String topic = "test-topic";
 
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, boostrapServers);
@@ -20,7 +21,7 @@ public class ProducerDemo {
 
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
 
-        ProducerRecord<String, String> record = new ProducerRecord<>("test-topic", "testing kafka producer");
+        ProducerRecord<String, String> record = new ProducerRecord<>(topic, "testing kafka producer");
 
         producer.send(record);
         producer.close();

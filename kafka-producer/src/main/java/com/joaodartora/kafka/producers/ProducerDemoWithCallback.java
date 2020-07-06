@@ -16,6 +16,7 @@ public class ProducerDemoWithCallback {
         Logger logger = LoggerFactory.getLogger(ProducerDemoWithCallback.class);
 
         String boostrapServers = "localhost:9092";
+        String topic = "test-topic";
 
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, boostrapServers);
@@ -24,7 +25,7 @@ public class ProducerDemoWithCallback {
 
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
-        ProducerRecord<String, String> record = new ProducerRecord<>("test-topic", "testing kafka producer with callback");
+        ProducerRecord<String, String> record = new ProducerRecord<>(topic, "testing kafka producer with callback");
 
         producer.send(record, (metadata, exception) -> {
             if (exception == null) {
