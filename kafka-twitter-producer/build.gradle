@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'com.joaodartora'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.5.0'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+    compile group: 'com.twitter', name: 'hbc-core', version: '2.2.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
