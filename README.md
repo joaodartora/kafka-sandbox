@@ -2,7 +2,7 @@
 
 - For information on advanced **CONSUMER** settings, click here: [Project With Consumer Advanced Settings](/kafka-elasticsearch-consumer)
 
-- For information on advanced **PRODUCER** settings, click here:
+- For information on advanced **PRODUCER** settings, click here: [Project With Producer Advanced Settings](/kafka-twitter-producer)
 
 ## STARTING KAFKA
 
