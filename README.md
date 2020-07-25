@@ -1,6 +1,6 @@
 # KAFKA SANDBOX
 
-- For information on advanced **CONSUMER** settings, click here: [/kafka-elasticsearch-consumer]
+- For information on advanced **CONSUMER** settings, click here: [Project With Consumer Advanced Settings](/kafka-elasticsearch-consumer)
 
 - For information on advanced **PRODUCER** settings, click here:
 
